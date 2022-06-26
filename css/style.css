@@ -1,92 +1,77 @@
 body{
-  background-color: hsl(225, 100%, 94%);
+  background-color: hsl(0, 0%, 95%);
 }
-/* Main-body */
+
+/* Main block */
 main{
-  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Lexend Deca', sans-serif;
+
+}
+
+/* Items */
+.item1, .item2, .item3{
+  width: 12%;
+  padding: 40px;
+}
+
+/* Items styling */
+.item1{
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.item2{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.item3{
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Styling section */
+.headings{
+  font-family: 'Big Shoulders Display', cursive;
+  color:hsl(0, 0%, 95%);
+}
+
+.text{
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  font-size: 13px;
+
+}
+
+/* Button styling */
+.btn1, .btn2, .btn3{
+  margin-top: 80px;
   background-color: white;
-  height: 610px;
-  width: 370px;
+  border: 2px solid white;
   border-radius: 20px;
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+  width: 120px;
+  height: 40px;
 }
 
-.illustration-image{
-  width: 100%;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-.order{
-margin-top: 30px;
-text-align: center;
-font-size: 1.5rem;
-font-family: 'Red Hat Display', sans-serif;
-font-weight: 900;
-}
-
-/* order-details */
-.detail{
-    text-align: center;
-    color:hsl(224, 23%, 55%);
-    padding: 10px 40px;
-}
-
-/* Annual-plan */
-.row{
-  margin-top: 40px;
-  margin-left: 50px;
-
-}
-.col-1,.col-2, .col-3{
-  float: left;
-}
-
-.anual-price{
-  margin: 0;
-  margin-top: 4px;
-  color:hsl(224, 23%, 55%);
-}
-
-.anual-plan{
-  margin: 0;
-  font-weight: 900;
-}
-
-.col-2{
-  padding-left: 20px;
-}
-
-.col-3{
-  margin-top: 10px;
-  margin-left: 60px;
-}
-
-/* button design */
-.btn{
-  margin-left: 35px;
-  margin-top: 50px;
-  width: 300px;
-  height: 45px;
-  border-radius: 10px;
-  border: 0;
-  color: white;
-  background-color: hsl(245, 75%, 52%);
-
-}
-
-.btn:hover{
-
+.btn1:hover, .btn2:hover, .btn3:hover{
+  color:hsl(0, 0%, 95%);
+  background-color: Transparent;
   cursor: pointer;
 }
 
-.cancel{
-  margin-top: 20px;
-  text-align: center;
-  color:hsl(224, 23%, 55%);
+.btn1{
+  color: hsl(31, 77%, 52%);
+}
+
+.btn2{
+  color: hsl(184, 100%, 22%);
+}
+
+.btn3{
+  color: hsl(179, 100%, 13%);
 }
